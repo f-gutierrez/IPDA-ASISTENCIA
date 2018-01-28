@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c7598fae-f5c9-4303-a9cb-05c42a86d7cc">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="6a8a0dd4-8c6b-4471-a73d-7e80ea95b1a9">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="nombre" class="java.lang.String"/>
+	<parameter name="direccion" class="java.lang.String"/>
+	<parameter name="barrio" class="java.lang.String"/>
+	<parameter name="codigo" class="java.lang.String"/>
+	<parameter name="foto" class="java.lang.Object"/>
+	<parameter name="nacimiento" class="java.lang.String"/>
+	<parameter name="bautismo" class="java.lang.String"/>
+	<parameter name="dni" class="java.lang.String"/>
+	<parameter name="telefono" class="java.lang.String"/>
+	<parameter name="estadoCivil" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="133" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="190" y="10" width="228" height="30" forecolor="#0935AD" uuid="b8e282a6-1448-4bbe-9376-60f6804201b0"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="styled">
+					<font fontName="Reality Sunday" size="18" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Sede Nacional Arequipa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="40" y="77" width="153" height="23" forecolor="#0935AD" uuid="d6f09756-c20a-4dcc-a49a-4e859f5b8c2d"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="Pristina" size="18" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Ficha de Datos de:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="210" y="80" width="190" height="20" uuid="1c614ea8-f8ae-4b33-87fb-70dbb1b1997b"/>
+				<textFieldExpression><![CDATA[$P{nombre}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="10" width="174" height="51" uuid="cb4170ba-e15f-46c0-b99c-cadf16afcd0d"/>
+				<imageExpression><![CDATA["D:/IPDA/PROYECTO_IPDA/img/Ipda.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="440" y="31" width="90" height="99" uuid="13a8b5bb-ba89-49ea-9150-719c952b3c0a"/>
+				<imageExpression><![CDATA[$P{foto}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="283" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="70" width="60" height="16" uuid="e9d8d9ea-8322-45d5-bf71-36ff03303ed5"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement>
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[direccion:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="70" width="340" height="16" uuid="3c04ce84-fdf5-406c-af6b-b11e71311ed4"/>
+				<textFieldExpression><![CDATA[$P{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="100" width="240" height="16" uuid="1a82d2eb-16a3-432b-beb0-bb45339935b2"/>
+				<textFieldExpression><![CDATA[$P{barrio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="39" width="60" height="20" uuid="a00d4ee7-5b5a-49ba-9dde-3564116e9d4d"/>
+				<textFieldExpression><![CDATA[$P{codigo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="100" width="50" height="18" uuid="ee40a298-e647-4625-a5a5-fbc03c397971"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement>
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[distrito:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="40" width="40" height="18" uuid="719747f4-0722-43a8-b7ac-892702dbb26b"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[codigo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="130" width="100" height="18" uuid="175fab53-582b-45c5-b715-20a872fe9d4c"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[fecha Nacimiento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="160" width="90" height="16" uuid="9b70097c-0451-4a9c-a2a6-e95c9e1ddaed"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[fecha bautismo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="220" width="40" height="18" uuid="3c0ebda3-045f-4db6-b8b8-97a6428fd821"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D.N.I.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="250" width="50" height="18" uuid="68344d30-4678-4846-bc03-b7cefe40b974"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[telefono:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="131" width="100" height="16" uuid="51fdf704-237c-4ad1-8f3f-c9823a3af826"/>
+				<textFieldExpression><![CDATA[$P{nacimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="160" width="100" height="16" uuid="418c9a3f-d6c8-47d8-b3f4-b0b8037d96ba"/>
+				<textFieldExpression><![CDATA[$P{bautismo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="220" width="50" height="18" uuid="2ff71d20-87bb-46a0-9968-4f18589da08f"/>
+				<textFieldExpression><![CDATA[$P{dni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="249" width="100" height="20" uuid="d0ea0837-f9d5-4840-b3cf-e27690f4e83b"/>
+				<textFieldExpression><![CDATA[$P{telefono}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="190" width="70" height="18" uuid="c7d77c15-f7e9-4f94-9f89-8690c941f20a"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement>
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado Civil:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="192" width="80" height="14" uuid="ca993286-f4c5-40c5-bc66-61ac019952b9"/>
+				<textFieldExpression><![CDATA[$P{estadoCivil}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<summary>
+		<band height="46" splitType="Stretch">
+			<textField pattern="MMM d, yyyy h:mm:ss a">
+				<reportElement x="30" y="13" width="100" height="20" uuid="12a739ed-d7e7-4b98-bc5f-a8dd051bd434"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="8" width="86" height="30" uuid="804e9236-239d-496a-8bac-04a11705f48f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="450" y="10" width="100" height="30" uuid="ea351bc7-737e-477b-a042-f1ae5d831f4f"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteGeneral" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="39e09f3f-fde8-4e84-adb2-8dd17128bae7">
+	<parameter name="culto" class="java.lang.String"/>
+	<parameter name="dia" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="codigo" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="119" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="190" y="10" width="240" height="30" forecolor="#0935AD" uuid="e5bd4aa3-e42c-4f4a-a635-79233b256b77"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" markup="styled">
+					<font fontName="Reality Sunday" size="18" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Sede Nacional Arequipa]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="20" width="180" height="50" uuid="db23d851-7d5f-4d3e-bc00-7cbb914ed298"/>
+				<imageExpression><![CDATA["D:/IPDA/PROYECTO_IPDA/ASISTENCIA/img/Ipda.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Transparent" x="130" y="95" width="133" height="23" forecolor="#0935AD" uuid="8e641c94-9fdc-486f-8508-333f660acdff"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="Pristina" size="18" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Reporte   General:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="100" width="50" height="19" uuid="2bd0f5b5-ecb4-4852-8a00-bb39e56e8732"/>
+				<textFieldExpression><![CDATA[$P{culto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="10" width="30" height="16" uuid="c4e4f941-28d6-491e-ae6e-3f55b0b15a8f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="50" height="16" uuid="59142548-7703-4aff-97d1-32984f62673a"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="10" width="53" height="16" uuid="178978a9-9b50-46c7-b05d-144edf261ae9"/>
+				<textFieldExpression><![CDATA[$P{dia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="40" width="50" height="16" uuid="d04bef37-1768-47e6-a1f7-33e50d4af955"/>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="12" width="50" height="16" uuid="b713b1b9-857c-46bc-af81-cb2f56ec6bbd"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="12" width="60" height="16" uuid="70933900-c416-441d-9b94-e1a9d66041d1"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#003399"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Perpetua Titling MT" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="220" y="5" width="50" height="16" uuid="65931697-383d-4201-bd12-ca8a95a86e14">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9305e680-24a2-4597-a7e0-fda0ea306c8b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="5" width="61" height="16" uuid="543159a5-ad4a-423e-9323-d3539e4fb60d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e7bd4efa-e42e-46ed-b19d-01e2776c88d5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField pattern="MMM d, yyyy h:mm:ss a">
+				<reportElement x="20" y="20" width="100" height="20" uuid="12d4dca8-1a01-47f6-b32a-45b0847c8573"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="8" width="86" height="30" uuid="2d799a46-dde6-4f8b-9c3f-0095a25afcf3"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
